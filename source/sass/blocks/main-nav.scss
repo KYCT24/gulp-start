@@ -70,7 +70,6 @@
     &__burger {
         @include clear-button;
         
-        
         @media (min-width: 768px) {
             display: none;
         }
