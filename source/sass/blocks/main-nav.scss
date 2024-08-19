@@ -22,7 +22,7 @@
         }
 
         @media (min-width: 1280px){
-            margin-right: 363px;
+            margin-right: 200px;
         }
         img {
             width: 93px;
@@ -34,15 +34,31 @@
         display: none;
         margin-top: auto;
         padding-bottom: 20px;
-        padding-left: 10px;
         padding-right: 10px;
         margin-left: auto;
+        
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000BF;
+            text-align: right;
+            opacity: 60%;
+        }
     } 
+    
     &__social {
-        @include clear-list;
         display: flex;
-        gap: 20px;
+        justify-content: end;
+        margin-top: 12px;
+        margin-bottom: 0px;
+        
+        img {
+            width: 21px;
+            height: 17px;
+        }
     }
+    
     &__menu {
         display: none;
         
@@ -52,7 +68,7 @@
             right: 0px;
             width: 60%;
             height: 100vh;
-            z-index: 100;
+            z-index: 1000;
             background-color: #EBEBEB;
             box-shadow: 
                 0px 2.32px 1.97px 0px #00000006,
@@ -66,6 +82,8 @@
         
         @media (min-width: 768px) {
             display: block;
+            margin-right: auto;
+            margin-left: auto;
         }
         
         &--showed {
@@ -79,6 +97,15 @@
             .main-nav__close {
                 display: block;
             }
+            
+            @media (min-width: 768px) {
+                .main-nav__contacts {
+                    display: none;
+                }
+                .main-nav__close {
+                    display: none;
+                }
+            }
         }
     }
     
@@ -88,8 +115,8 @@
         
         @media (min-width: 768px) {
             display: flex;
-            margin-left: 115px;
             margin-top: 0px;
+            margin: auto;
         }
     }
     
@@ -99,8 +126,8 @@
         // padding-top: 10px;
         text-align: right;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 37px;
+        font-size: 20px;
+        line-height: 24px;
         color: black;
         
         @media (min-width: 768px) {
@@ -109,6 +136,15 @@
             text-align: center;
         }
         
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+        
+        @media (min-width: 1280px) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
         a {
             display: block;
             padding: 14px;
@@ -131,13 +167,12 @@
         justify-content: center;
         gap: 25px;
         margin-left: auto;
-        position: relative;
-        z-index: 200;
     }
     
     &__burger {
         @include clear-button;
-        
+
+        position: relative;
         @media (min-width: 768px) {
             display: none;
         }
@@ -166,6 +201,7 @@
     &__find {
         @include clear-button;
         
+        z-index: 1022;
         img {
             width: 17px;
             height: 16px;
@@ -182,6 +218,7 @@
     &__shop {
         @include clear-button;
         
+        z-index: 1011;
         position: relative;
         img {
         width: 20px;
@@ -197,21 +234,26 @@
     }
     &__pin {
         position: absolute;
-        top: -12px;
-        right: -8px;
-        min-width: 15px;
+        top: -5px;
+        right: -7px;
+        min-width: 12px;
         padding: 0 2px;
-        height: 15px;
-        border-radius: 13px;   
+        height: 12px;
+        border-radius: 12px;   
         text-align: center;
-        line-height: 15px;
+        line-height: 12px;
         color: #000;
         font-size: 7px;
         background-color: #D9D9D9;
         
         @media (min-width: 768px) {
             font-size: 11px;
+            top: -7px;
+            right: -9px;
+            min-width: 18px;
+            border-radius: 18px;
+            height: 18px;
+            line-height: 18px;
         }
-        
     }
 }
