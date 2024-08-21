@@ -8,43 +8,59 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <nav class="main-nav">
+    <header class="main-nav">
+      
       <div class="container main-nav__container">
         <a class="main-nav__logo">
           <img src="img/logo.svg" alt="Логотип компании Slick">
         </a>
         
-        <ul class="main-nav__list main-nav__list--showed">
-          <li class="main-nav__item">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Магазин</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-
+        <nav class="main-nav__menu main-nav__menu--showed">
+          <button class="main-nav__close">
+            <img src="img/icon-cross.svg" alt="">
+          </button>
+          <ul class="main-nav__list ">
+            <li class="main-nav__item">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          
+          <div class="main-nav__contacts">
+            <p>Следи За Нами <br> В Социальных Сетях:</p>
+            <ul class="main-nav__social social">
+              <li class="social-item">
+                <a href="#">
+                  <img src="img/icon-telegram.png" alt="Логотип компании Slick">
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#">
+                  <img src="img/icon-vk.png" alt="Логотип компании Slick">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
         <div class="main-nav__buttons">
         <button class="main-nav__find">
           <img src="img/icon-find.svg" alt="">
         </button>
-        
         <button class="main-nav__shop">
+          <span class="main-nav__pin">0</span>
           <img src="img/icon-shop.svg" alt="">
         </button>
-        
         <button class="main-nav__burger">
           <img src="img/icon-menu.svg" alt="">
         </button>
-        
-        <button class="main-nav__close main-nav__close--showed">
-          <img src="img/icon-cross.svg" alt="">
-        </button>
         </div>
-        
       </div>
-    </nav>
+    </header>
   </body>
 </html>
