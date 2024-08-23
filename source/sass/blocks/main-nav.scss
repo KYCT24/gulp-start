@@ -1,5 +1,6 @@
 .main-nav {
-    background-color: white;
+    position: relative;
+    z-index: 10;
     
     &__container {
         display: flex;
@@ -22,7 +23,7 @@
         }
 
         @media (min-width: 1280px){
-            margin-right: 200px;
+            margin-right: 142px;
         }
         img {
             width: 93px;
@@ -68,7 +69,7 @@
             right: 0px;
             width: 60%;
             height: 100vh;
-            z-index: 1000;
+            z-index: 11;
             background-color: #EBEBEB;
             box-shadow: 
                 0px 2.32px 1.97px 0px #00000006,
@@ -156,7 +157,7 @@
             }
             
             @media (min-width: 768px) {
-                padding: 20px 36px;
+                padding: 20px 18px;
             }
         }
     }
@@ -201,7 +202,7 @@
     &__find {
         @include clear-button;
         
-        z-index: 1022;
+        z-index: 11;
         img {
             width: 17px;
             height: 16px;
@@ -218,7 +219,7 @@
     &__shop {
         @include clear-button;
         
-        z-index: 1011;
+        z-index: 11;
         position: relative;
         img {
         width: 20px;

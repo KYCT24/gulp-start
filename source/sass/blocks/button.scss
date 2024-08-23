@@ -1,0 +1,24 @@
+.button {
+    @include clear-button;
+    
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #000000;
+    text-transform: capitalize;
+    padding: 10px;
+    box-shadow: 0px 2.32px 1.97px 0px #00000006,
+                0px 5.39px 4.58px 0px #00000009,
+                0px 9.68px 8.22px 0px #0000000B,
+                0px 16.06px 13.65px 0px #0000000C,
+                0px 26.45px 22.49px 0px #0000000E,
+                0px 100px 85px 0px #00000017;
+                
+    @media (min-width: 768px) {
+     font-size: 28px;
+     line-height: 44px;
+ }
+ 
+}
