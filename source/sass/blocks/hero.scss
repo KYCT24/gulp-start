@@ -51,36 +51,6 @@
     
     &__title {
         margin-top: 0px;
-        
-        
-        
-    //     @media (min-width: 768px) {
-    //         font-size: 62px;
-    //         line-height: 70px;
-    //     }
-    // }
-    
-    // @media (min-width: 1280px) {
-    //     font-size: 75px;
-    //     line-height: 84px;
-    // }
-        
-        
-        
-        
-        
-        
-        
-        
-        // flex-direction: column;
-        // flex-wrap:nowrap;
-        // justify-content: space-between;
-        
-        // @media (min-width: 768px) {
-        //     gap: 15px;
-        // }
-        
-        
     }
     
     &__text {
@@ -133,8 +103,7 @@
         text-transform: capitalize;
         
         margin-top: 20px;
-        margin-bottom: 0px;
-        
+        margin-bottom: 0px
         
         @media (min-width: 768px) {
             font-size: 20px;
@@ -198,9 +167,10 @@
             
             margin-left: 0px;
             margin-right: 0px;
-            
             margin-top: -50px;
+            
             background: transparent;
+            
             &::before {
                 position: absolute;
                 bottom: 0px;
@@ -215,7 +185,6 @@
                 background-repeat: no-repeat, no-repeat;
                 background-position: -1% 95%;
             }
-            
         }
     }
     
