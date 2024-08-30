@@ -42,6 +42,7 @@
     }
     
     &__products {
+        @include clear-list;
         display: flex;
         gap: 25px;
         flex-direction: column;
