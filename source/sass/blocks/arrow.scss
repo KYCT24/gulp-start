@@ -1,0 +1,18 @@
+.arrow {
+    &-left {
+        display: block;
+        position: absolute;
+        border-color: transparent;
+        background: url('../img/most_popular_slider-left.svg') no-repeat;
+        width: 15px;
+        height: 27px;
+    }
+    &-right {
+        display: block;
+        position: absolute;
+        border-color: transparent;
+        background: url('../img/most_popular_slider-right.svg') no-repeat;
+        width: 15px;
+        height: 27px;
+    }
+}

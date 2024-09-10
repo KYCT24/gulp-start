@@ -1,0 +1,144 @@
+.banners {
+    
+    &__container {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        
+        @media (min-width: 768px) {
+            margin-top: 60px;
+            margin-bottom: 90px;
+        }
+        
+        @media (min-width: 1280px) {
+            margin-top: 80px;
+            margin-bottom: 125px;
+        }
+    }
+    
+    &__slider {
+        position: relative;
+    }
+    &__list {
+        @include clear-list;
+        width: 100%;
+        position: relative;
+    }
+    &__item {
+        z-index: -10;
+        background-color: #DC4B54;
+        height: 360px;
+        
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+        
+        margin-left: -10px;
+        margin-right: -10px;
+        @media (min-width: 768px) {
+            margin-left: -20px;
+            margin-right: -20px;
+            height: 586px;
+        }
+        
+        @media (min-width: 1280px) {
+            border-radius: 20px;
+
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        &::before {
+            content: "";
+            bottom: 0px;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            position: absolute;
+            z-index: 100;
+            background-image: url('../img/sick.svg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: 80% auto;
+            height: 100%;
+            background-position: 40% 100%;
+            
+            
+            @media (min-width: 768px) {
+                background-position: 5% 100%;
+            }
+            
+            @media (min-width: 1280px) {
+                background-size: 60% auto;
+                background-position: -1% 100%;
+            }
+        }
+        
+        &::after {
+            bottom: 0px;
+            top: 20px;
+            left: 0px;
+            right: 0px;
+            position: absolute;
+            z-index: 200;
+            background-image: url('../img/big_banner_legs.svg');
+            background-repeat: no-repeat;
+            background-size: 560px;
+
+            @media (min-width: 768px) {
+                content: "";
+            }
+            
+            @media (min-width: 1280px) {
+                bottom: 0px;
+                top: -331px;
+                left: -80px;
+                right: 0px;
+                background-size: auto;
+            }
+        }
+        &--green {
+            background-color: green;
+        }
+    }
+
+    
+
+    &__controls {
+        position: absolute;
+        top: 335px;
+        right: 0;
+        left: 0;
+        @media (min-width: 768px) {
+            top: 560px;
+            left: auto;
+            right: 20px;
+        }
+        
+        @media (min-width: 1280px) {
+        }
+    }
+    &__arrow-left {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            position: absolute;
+            top: 270px;
+            left: 25px;
+        }
+        
+        @media (min-width: 1280px) {
+        }
+
+    }
+    &__arrow-right {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            
+            position: absolute;
+            top: 270px;
+            right: 25px;
+        }
+    }
+}
