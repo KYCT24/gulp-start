@@ -1,5 +1,4 @@
 .most-popular {
-
     
     &__container {
         display: flex;
@@ -16,7 +15,6 @@
         display: flex;
         flex-direction: column;
         position: relative;
-
     }
     &__subtitle {
         display: block;
@@ -168,14 +166,14 @@
             display: block;
             top: 140px;
             left: 320px;
-
+            
             @media (min-width: 1024px) {
                 left: 685px;
-              }
+            }
             
             @media (min-width: 1420px) {
                 left: 1055px;
-              }
+            }
           }
     }
     &__link {

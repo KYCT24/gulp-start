@@ -50,7 +50,6 @@
         padding: 25px 25px 25px 25px;
         
         display: grid;
-        
         grid-template-columns:55px auto;
         grid-template-rows: 75px auto; 
         gap: 20px;
@@ -119,9 +118,5 @@
             grid-column: span 1;
             grid-row: span 1;
         }
-        @media (min-width: 1280px) {
-
-        }
-        
     }
 }

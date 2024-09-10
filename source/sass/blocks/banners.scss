@@ -32,7 +32,6 @@
         flex-direction: column;
         position: relative;
         
-        
         margin-left: -10px;
         margin-right: -10px;
         @media (min-width: 768px) {
@@ -43,7 +42,7 @@
         
         @media (min-width: 1280px) {
             border-radius: 20px;
-
+            
             margin-left: 0px;
             margin-right: 0px;
         }
@@ -62,7 +61,6 @@
             background-size: 80% auto;
             height: 100%;
             background-position: 40% 100%;
-            
             
             @media (min-width: 768px) {
                 background-position: 5% 100%;
@@ -84,7 +82,7 @@
             background-image: url('../img/big_banner_legs.svg');
             background-repeat: no-repeat;
             background-size: 560px;
-
+            
             @media (min-width: 768px) {
                 content: "";
             }
@@ -101,9 +99,7 @@
             background-color: green;
         }
     }
-
     
-
     &__controls {
         position: absolute;
         top: 335px;
@@ -114,9 +110,6 @@
             left: auto;
             right: 20px;
         }
-        
-        @media (min-width: 1280px) {
-        }
     }
     &__arrow-left {
         display: none;
@@ -126,10 +119,6 @@
             top: 270px;
             left: 25px;
         }
-        
-        @media (min-width: 1280px) {
-        }
-
     }
     &__arrow-right {
         display: none;

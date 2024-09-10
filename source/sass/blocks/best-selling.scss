@@ -2,7 +2,7 @@
     &__title {
       margin-top: 0px;
       margin-bottom: 20px;
-  
+      
       @media (min-width: 768px) {
         margin-bottom: 62px;
       }
@@ -15,12 +15,12 @@
         
         gap: 18px;
         margin-bottom: 25px;
-    
+        
         @media (min-width: 768px) {
           gap: 80px;
           margin-bottom: 60px;
         }
-    
+        
         @media (min-width: 1280px) {
           margin-bottom: 80px;
         }
@@ -33,7 +33,7 @@
         box-shadow: none;
         
         padding: 8px 38px;
-    
+        
         @media (min-width: 768px) {
           font-size: 28px;
           line-height: 38px;
