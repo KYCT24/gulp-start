@@ -26,18 +26,15 @@
     &__item {
         z-index: -10;
         background-color: #DC4B54;
-        height: 360px;
-        
         display: flex;
         flex-direction: column;
         position: relative;
-        
         margin-left: -10px;
         margin-right: -10px;
+        
         @media (min-width: 768px) {
             margin-left: -20px;
             margin-right: -20px;
-            height: 586px;
         }
         
         @media (min-width: 1280px) {
@@ -73,10 +70,10 @@
         }
         
         &::after {
-            bottom: 0px;
-            top: 20px;
-            left: 0px;
-            right: 0px;
+            bottom: 0;
+            top: 55px;
+            left: 0;
+            right: 0;
             position: absolute;
             z-index: 200;
             background-image: url('../img/big_banner_legs.svg');
@@ -88,10 +85,10 @@
             }
             
             @media (min-width: 1280px) {
-                bottom: 0px;
-                top: -331px;
+                bottom: 0;
+                top: -330px;
                 left: -80px;
-                right: 0px;
+                right: 0;
                 background-size: auto;
             }
         }
@@ -102,29 +99,34 @@
     
     &__controls {
         position: absolute;
-        top: 335px;
+        top: 330px;
         right: 0;
         left: 0;
+        
         @media (min-width: 768px) {
-            top: 560px;
+            top: 580px;
             left: auto;
             right: 20px;
+        }
+        @media (min-width: 1280px) {
+            top: 560px;
         }
     }
     &__arrow-left {
         display: none;
+        
         @media (min-width: 768px) {
             display: block;
             position: absolute;
-            top: 270px;
+            top: 265px;
             left: 25px;
         }
     }
     &__arrow-right {
         display: none;
+        
         @media (min-width: 768px) {
             display: block;
-            
             position: absolute;
             top: 270px;
             right: 25px;

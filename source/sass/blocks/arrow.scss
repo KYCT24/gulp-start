@@ -1,18 +1,13 @@
 .arrow {
-    &-left {
-        display: block;
-        position: absolute;
-        border-color: transparent;
-        background: url('../img/most_popular_slider-left.svg') no-repeat;
-        width: 15px;
-        height: 27px;
-    }
+    @include clear-button;
+    display: block;
+    position: absolute;
+    border-color: transparent;
+    background: url('../img/most_popular_slider-left.svg') no-repeat;
+    width: 15px;
+    height: 30px;
+    
     &-right {
-        display: block;
-        position: absolute;
-        border-color: transparent;
-        background: url('../img/most_popular_slider-right.svg') no-repeat;
-        width: 15px;
-        height: 27px;
+        transform: rotate(180deg);
     }
 }

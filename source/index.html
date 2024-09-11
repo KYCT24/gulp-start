@@ -9,7 +9,6 @@
   </head>
   <body>
     <header class="main-nav">
-      
       <div class="main-nav__container container ">
         <a class="main-nav__logo">
           <img src="img/logo.svg" alt="Логотип компании Slick">
@@ -30,7 +29,6 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          
           <div class="main-nav__contacts">
             <p>Следи За Нами <br> В Социальных Сетях:</p>
             <ul class="main-nav__social social">
@@ -47,7 +45,6 @@
             </ul>
           </div>
         </nav>
-        
         <div class="main-nav__buttons">
         <button class="main-nav__find">
           <img src="img/icon-find.svg" alt="">
@@ -88,22 +85,22 @@
       <section class="slideshow">
         <div class="slideshow__container">
           <ul class="slideshow__list">
-            <li class="slideshow__ozon">
+            <li class="slideshow__ozon slideshow--animation">
               <a href="#">
                 <img src="img/ozon-logo.svg" alt="">
               </a>
             </li>
-            <li class="slideshow__wildberries">
+            <li class="slideshow__wildberries slideshow--animation">
               <a href="#">
                 <img src="img/wildberries-logo.svg" alt="">
               </a>
             </li>
-            <li class="slideshow__sbermarket">
+            <li class="slideshow__sbermarket slideshow--animation">
               <a href="#">
                 <img src="img/sbermarket-logo.svg" alt="">
               </a>
             </li>
-            <li class="slideshow__yandex-market">
+            <li class="slideshow__yandex-market slideshow--animation">
               <a href="#">
                 <img src="img/yandex-market-logo.svg" alt="">
               </a>
@@ -153,10 +150,10 @@
                 <button class="slider-pagination__center"></button>
                 <button class="slider-pagination__right"></button>
               </div>
-              <button class="most-popular__arrow-left arrow-left"></button>
-              <button class="most-popular__arrow-right arrow-right"></button>
+              <button class="most-popular__arrow-left arrow"></button>
+              <button class="most-popular__arrow-right arrow arrow-right"></button>
             </div>
-            <a class="most-popular__link--phone button">Показать все</a>
+            <a class="most-popular__link most-popular__link--phone button">Показать все</a>
           </div>
       </section>
       
@@ -167,7 +164,7 @@
               <li class="banners__item big-banner">
                 <div class="big-banner__wrapper">
                   <h2 class="big-banner__title">Ты готов<br>проложить свой путь?</h2>
-                  <a class="big-banner__button button button">См Все</a>
+                  <a class="big-banner__button button">См Все</a>
                   <ul class="big-banner__products">
                     <li class="big-banner__product">
                       <a class="big-banner__photo">
@@ -187,10 +184,10 @@
                   </ul>
                 </div>
               </li>
-              <!-- <li class="banners__item big-banner banners__item--green">
+              <!-- <li class="banners__item banners__item--green big-banner">
                 <div class="big-banner__wrapper">
                   <h2 class="big-banner__title">Ты готов<br>проложить свой путь?</h2>
-                  <a class="big-banner__button button button">См Все</a>
+                  <a class="big-banner__button button">См Все</a>
                   <ul class="big-banner__products">
                     <li class="big-banner__product">
                       <a class="big-banner__photo">
@@ -216,8 +213,8 @@
               <button class="slider-pagination__center slider-pagination__center--white"></button>
               <button class="slider-pagination__right slider-pagination__right--white"></button>
             </div>
-            <button class="banners__arrow-left arrow-left"></button>
-            <button class="banners__arrow-right arrow-right"></button>
+            <button class="banners__arrow-left arrow"></button>
+            <button class="banners__arrow-right arrow arrow-right"></button>
           </div>
         </div>
       </section>
@@ -243,7 +240,6 @@
                 <img src="img/arrow_button.svg" alt="">
               </button>
             </li>
-            
             <li class="product__item product__item--new">
               <img class="product__image" src="img/slick_sneaker.png" alt="slick_sneaker">
               <h3 class="product__name">Slick sneaker shoe</h3>
@@ -255,7 +251,6 @@
                 <img src="img/arrow_button.svg" alt="">
               </button>
             </li>
-            
             <li class="product__item">
               <img class="product__image" src="img/slick_canvas_shoe.png" alt="slick_canvas_shoe">
               <h3 class="product__name">Slick canvas shoe</h3>
@@ -267,7 +262,6 @@
                 <img src="img/arrow_button.svg" alt="">
               </button>
             </li>
-            
           </ul>
           <button class="best-selling__show-all button">Показать все</button>
         </div>
@@ -301,58 +295,56 @@
           </ul>
         </div>
       </section>
-      
-      <footer class="footer">
-        <div class="footer__container container">
-          <div class="footer__wrapper">
-            <div class="footer__slick-group">
-              <a class="footer__logo">
-                <img src="img/logo__white.svg" alt="Логотип компании Slick">
-              </a>
-              <p class="footer__sibtitle">Какие мы крутые, у нас лучшие кроссы и ваще... всё.</p>
-              <ul class="footer__social social">
-                <li class="social__item">
-                  <a href="#">
-                    <img src="img/icon-telegram_white.svg" alt="Логотип компании Slick">
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="#">
-                    <img src="img/icon-vk_white.svg.svg" alt="Логотип компании Slick">
-                  </a>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="footer__subscribe-group">
-              <span class="footer__title">Подпишись на наши акции</span>
-              <form class="footer__form">
-                <input class="footer__input" value="Введи Email...">
-                <button class="footer__button button">Подписаться</button>
-              </form>
-            </div>
-              
-            <div class="footer__sitelinks-group">
-              <ul class="footer__sitelinks">
-                <p class="footer__sitelink-title">Быстрые ссылки</p>
-                <li class="footer__sitelink">
-                  <a href="#">Главная</a>
-                </li>
-                <li class="footer__sitelink">
-                  <a href="#">Магазин</a>
-                </li>
-                <li class="footer__sitelink">
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </div>
+    </main> 
+    
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper">
+          <div class="footer__slick-group">
+            <a class="footer__logo">
+              <img src="img/logo__white.svg" alt="Логотип компании Slick">
+            </a>
+            <p class="footer__sibtitle">Какие мы крутые, у нас лучшие кроссы и&nbsp;ваще... всё.</p>
+            <ul class="footer__social social">
+              <li class="social__item">
+                <a href="#">
+                  <img src="img/icon-telegram_white.svg" alt="Логотип компании Slick">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <img src="img/icon-vk_white.svg.svg" alt="Логотип компании Slick">
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="footer__all_right">
-            <span >www.slick.com©all right reserved</span>
+          <div class="footer__subscribe-group">
+            <span class="footer__title">Подпишись на наши акции</span>
+            <form class="footer__form">
+              <input class="footer__input" value="Введи Email...">
+              <button class="footer__button button">Подписаться</button>
+            </form>
+          </div>
+          <div class="footer__sitelinks-group">
+            <ul class="footer__sitelinks">
+              <p class="footer__sitelink-title">Быстрые ссылки</p>
+              <li class="footer__sitelink">
+                <a href="#">Главная</a>
+              </li>
+              <li class="footer__sitelink">
+                <a href="#">Магазин</a>
+              </li>
+              <li class="footer__sitelink">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
-      
-    </main> 
+        <div class="footer__all-right">
+          <span >www.slick.com©all right reserved</span>
+        </div>
+      </div>
+    </footer>
+    
   </body>
 </html>

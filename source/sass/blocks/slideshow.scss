@@ -30,29 +30,24 @@
         }
         &:hover li {
             animation-play-state: paused;
-          }
-          
+        }
+        
         a {
             padding: 35px 15px;
         }
     }
     
-    &__ozon {
+    &--animation {
         position: absolute;
         animation: right-to-left;
         animation-duration: 12s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         padding-left: 100%;
+    }
+    
+    &__ozon {
         
-        @keyframes right-to-left {
-            from {
-                transform: translateX(0%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
         img {
             width: 72px;
             height: 16px;
@@ -65,22 +60,8 @@
     }
     
     &__wildberries {
-        position: absolute;
-        animation: right-to-left;
-        animation-duration: 12s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
         animation-delay: 3s;
-        padding-left: 100%;
         
-        @keyframes right-to-left {
-            from {
-                transform: translateX(0%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
         img {
             width: 106px;
             height: 16px;
@@ -93,22 +74,8 @@
     }
     
     &__sbermarket {
-        position: absolute;
-        animation: right-to-left;
-        animation-duration: 12s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
         animation-delay: 6s;
-        padding-left: 100%;
         
-        @keyframes right-to-left {
-            from {
-                transform: translateX(0%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
         img {
             width: 120px;
             height: 16px;
@@ -120,22 +87,8 @@
         }
     }
     &__yandex-market {
-        position: absolute;
-        animation: right-to-left;
-        animation-duration: 12s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
         animation-delay: 9s;
-        padding-left: 100%;
         
-        @keyframes right-to-left {
-            from {
-                transform: translateX(0%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
         img {
             width: 90px;
             height: 16px;
@@ -144,6 +97,15 @@
                 width: 208px;
                 height: 40px;
             }
+        }
+    }
+    
+    @keyframes right-to-left {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-100%);
         }
     }
 }

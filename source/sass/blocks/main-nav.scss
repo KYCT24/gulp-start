@@ -25,6 +25,7 @@
         @media (min-width: 1280px){
             margin-right: 142px;
         }
+        
         img {
             width: 93px;
             height: 31px;
@@ -122,9 +123,6 @@
     }
     
     &__item {
-        // padding-left: 36px;
-        // padding-right: 36px;
-        // padding-top: 10px;
         text-align: right;
         font-weight: 400;
         font-size: 20px;
@@ -172,8 +170,9 @@
     
     &__burger {
         @include clear-button;
-
+        
         position: relative;
+        
         @media (min-width: 768px) {
             display: none;
         }
@@ -203,6 +202,7 @@
         @include clear-button;
         
         z-index: 11;
+        
         img {
             width: 17px;
             height: 16px;
@@ -221,9 +221,10 @@
         
         z-index: 11;
         position: relative;
+        
         img {
-        width: 20px;
-        height: 16px;
+            width: 20px;
+            height: 16px;
         }
         
         @media (min-width: 768px) {
