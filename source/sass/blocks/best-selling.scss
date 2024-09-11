@@ -1,25 +1,25 @@
 .best-selling {
     &__title {
-        margin-bottom: 20px;
-    
-        @media (min-width: 768px) {
-          margin-bottom: 62px;
-        }
+      margin-top: 0px;
+      margin-bottom: 20px;
+      
+      @media (min-width: 768px) {
+        margin-bottom: 62px;
+      }
     }
     
     &__category {
         display: flex;
         position: relative;
         justify-content: center;
-        
         gap: 18px;
         margin-bottom: 25px;
-    
+        
         @media (min-width: 768px) {
           gap: 80px;
           margin-bottom: 60px;
         }
-    
+        
         @media (min-width: 1280px) {
           margin-bottom: 80px;
         }
@@ -30,13 +30,11 @@
         font-size: 14px;
         line-height: 19px;
         box-shadow: none;
-        
         padding: 8px 38px;
-    
+        
         @media (min-width: 768px) {
           font-size: 28px;
           line-height: 38px;
-          
           padding: 20px 45px;
         }
     }
@@ -54,16 +52,14 @@
           grid-template-columns: repeat(2, minmax(235px, 600px));
           grid-template-rows: repeat(3,minmax(212px, 364px));
           gap: 40px 40px;
-          
           margin-bottom: 45px;
         }
-      
+        
         @media (min-width: 1280px) {
           display: grid;
           grid-template-columns: repeat(3, minmax(377px, 503px));
           grid-template-rows: repeat(2,524px);
           gap: 70px 30px;
-          
           margin-bottom: 85px;
         }
     }
@@ -72,19 +68,17 @@
         display: block;
         margin: 0 auto;
         width: 100%;
-        
         font-weight: 600;
         font-size: 28px;
         line-height: 43px;
         padding: 16px 52px;
-        
         box-shadow: 0px 2.77px 2.21px 0px #00000005,
             0px 6.65px 5.32px 0px #00000007,
             0px 12.52px 10.02px 0px #00000009,
             0px 22.34px 17.87px 0px #0000000B,
             0px 41.78px 33.42px 0px #0000000D,
             0px 100px 80px 0px #00000012;
-            
+        
         @media (min-width: 768px) {
           width: auto;
         }

@@ -1,0 +1,119 @@
+.reviews {
+    &__container {
+        margin-top: 70px;
+        
+        @media (min-width: 1280px) {
+            margin-top: 80px;
+        }
+    }
+    
+    &__title {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        
+        @media (min-width: 768px) {
+            margin-bottom: 20px;
+        }
+        @media (min-width: 1280px) {
+            margin-bottom: 50px;
+        }
+        
+          &--one {
+            @media (min-width: 768px) {
+                display: none;
+            }
+          }
+          
+          &--two {
+            display: none;
+            
+            @media (min-width: 768px) {
+                display: block;
+            }
+          }
+    }
+    &__list {
+        @include clear-list;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        @media (min-width: 1280px) {
+          flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 70px;
+        }
+    }
+    
+    &__item {
+        background-color: #F3F3F3;
+        border: 2px solid #DEDEDE;
+        border-radius: 25px;
+        padding: 25px 25px 25px 25px;
+        display: grid;
+        grid-template-columns:55px auto;
+        grid-template-rows: 75px auto; 
+        gap: 20px;
+        
+        @media (min-width: 768px) {
+            padding: 78px 67px 78px 67px;
+            display: grid;
+            grid-template-columns:128px 1fr;
+            grid-template-rows: 1fr;
+        }
+    }
+    
+    &__img {
+        width: 54px;
+        height: 75px;
+        
+        @media (min-width: 768px) {
+            width: 130px;
+            height: 180px;
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+    }
+    
+    &__wrapper {
+        @media (min-width: 768px) {
+            align-self: flex-end;
+        }
+    }
+    
+    &__author {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 38px;
+        color: black;
+        margin: 0px;
+    }
+    
+    &__stars {
+        background-image: url('../img/reviews_star.svg');
+        background-repeat: repeat-x;
+        height: 19px;
+        
+        &--one {
+            width: 81px;
+          }
+        
+        &--two {
+            width: 63px;
+        }
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: black;
+        margin: 0px;
+        grid-column: span 2;
+        
+        @media (min-width: 768px) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+}

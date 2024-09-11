@@ -31,4 +31,12 @@
             right: -63px;
         }
     }
+    
+    &--reviews{
+        span {
+            &::before {
+            left: -245px;
+            }
+        }
+    }
 }

@@ -1,0 +1,45 @@
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    
+    &__left {
+        background-color: #000000;
+        border-color: transparent;
+        width: 11px;
+        height: 11px;
+        border-radius: 11px;
+        padding: 0;
+        
+        &--white {
+            background-color: #FFFFFF;
+        }
+    }
+    
+    &__center {
+        background-color: #000000;
+        border-color: transparent;
+        width: 30px;
+        height: 11px;
+        border-radius: 11px;
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        &--white {
+            background-color: #FFFFFF;
+        }
+    }
+    
+    &__right {
+        background-color: #000000;
+        border-color: transparent;
+        width: 11px;
+        height: 11px;
+        border-radius: 11px;
+        padding: 0;
+        
+        &--white {
+            background-color: #FFFFFF;
+        }
+    }
+}
