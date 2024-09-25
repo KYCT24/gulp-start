@@ -12,8 +12,6 @@ const closeMenu = () => {
     buttonClosed.removeEventListener('click', closeMenu);
 };
 
-
-const buttonOpenModal = document.querySelector('.main-nav__burger');
 const buttonCloseModal = document.querySelector('.modal-product__close');
 const modal = document.querySelector('.modal-product');
 
@@ -26,6 +24,7 @@ const closeModal = () => {
     modal.classList.remove("modal-product--showed");
     buttonClosed.removeEventListener('click', closeModal);
 };
+export {openModal, closeModal};
 
 const buttonAll = document.querySelectorAll('button');
 buttonAll.forEach(
