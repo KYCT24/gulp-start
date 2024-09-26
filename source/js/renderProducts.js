@@ -25,27 +25,24 @@ export default (products, template, target, isTargetList = false, templateClass 
         const priceNewE1 = itemE1.querySelector('.product__price-new');
         const priceOldE1 = itemE1.querySelector('.product__price-old');
         const buttonE1 = itemE1.querySelector('.product__button');
-        const { id, name, status, big, img, price_new, price_old } = product;
-        
+        const { id, name, status, isBig, image, price, oldPrice } = product;
+
         itemE1.dataset.productId = id;
         titleE1.texContent = name;
-        imageE1.src = img;
-        priceNewE1.texContent =`${price_new} ₽`;
-        priceOldE1.texContent =`${price_old} ₽`;
+        imageE1.src = image;
+        priceNewE1.texContent =`${price} ₽`;
+        priceOldE1.texContent =`${oldPrice} ₽`;
         
         const buttonCloseModal = document.querySelector('.modal-product__close');
-        
         buttonE1.addEventListener('click',openModal);
         buttonCloseModal.addEventListener('click', closeModal);
         
-        if(status.length) {
+        if(status?.length) {
             itemE1.classList.add(`product__item--${status}`);
         } 
-        
-        if(big) {
+        if(isBig) {
             itemE1.classList.add(`product__item--big`);
         }
-        console.log(buttonE1);
         fragment.appendChild(itemE1);
     });
     

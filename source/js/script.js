@@ -32,14 +32,7 @@ buttonAll.forEach(
         if (button.classList.contains('most-popular__button')){
             button.addEventListener('click',openModal);
             buttonCloseModal.addEventListener('click', closeModal);
-            // console.log(button);
             return;
-        };
-        
-        if (button.classList.contains('product__button')){
-            button.addEventListener('click',openModal);
-            buttonCloseModal.addEventListener('click', closeModal);
-            // console.log(button);
         };
     }
 );
