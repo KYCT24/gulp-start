@@ -24,7 +24,6 @@ const closeModal = () => {
     modal.classList.remove("modal-product--showed");
     buttonClosed.removeEventListener('click', closeModal);
 };
-export {openModal, closeModal};
 
 const buttonAll = document.querySelectorAll('button');
 buttonAll.forEach(
@@ -36,3 +35,5 @@ buttonAll.forEach(
         };
     }
 );
+
+export {openModal, closeModal};
