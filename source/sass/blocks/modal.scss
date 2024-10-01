@@ -1,0 +1,54 @@
+.modal-product {
+    position: fixed;
+    z-index: 9000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #00000080;
+    display: none;
+    
+    &__сontainer {
+        position: relative;
+        background-color: #FBFBFB;
+        padding: 30px 40px 40px 40px;
+        margin: 15% auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 480px;
+    }
+    
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+        
+        span {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 38px;
+            color: #000000;
+        };
+    }
+    
+    &__close {
+        @include clear-button;
+        
+        position: absolute;
+        top: 24px;
+        right: 11px;
+        
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    
+    // &__button {
+        
+    // }
+    
+    &--showed {
+        display: block;
+    }
+}
