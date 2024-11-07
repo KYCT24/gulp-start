@@ -201,6 +201,7 @@
     &__find {
         @include clear-button;
         
+        cursor: pointer;
         z-index: 11;
         
         img {
@@ -219,6 +220,7 @@
     &__shop {
         @include clear-button;
         
+        cursor: pointer;
         z-index: 11;
         position: relative;
         
@@ -234,6 +236,16 @@
             }
         }
     }
+    
+    &__basket {
+        position: relative;
+        z-index: 1022;
+        // &_active {
+        //     display: block !important;
+        // }
+    }
+    
+    
     &__pin {
         position: absolute;
         top: -5px;

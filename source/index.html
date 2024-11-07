@@ -46,18 +46,49 @@
           </div>
         </nav>
         <div class="main-nav__buttons">
-        <button class="main-nav__find">
-          <img src="img/icon-find.svg" alt="">
-        </button>
-        <button class="main-nav__shop">
-          <span class="main-nav__pin">0</span>
-          <img src="img/icon-shop.svg" alt="">
-        </button>
-        <button class="main-nav__burger">
-          <img src="img/icon-menu.svg" alt="">
-        </button>
-        </div>
+          <button class="main-nav__find">
+            <img src="img/icon-find.svg" alt="">
+          </button>
+          <div class="main-nav__basket">
+            <button class="main-nav__shop">
+                <span class="main-nav__pin">0</span>
+                <img src="img/icon-shop.svg" alt="">
+            </button>
+              <div class="shopping-cart">
+                  <h3 class="shopping-cart__title">Корзина Товаров</h3>
+                  <template id="shopping-cart__productList">
+                    <li class="shopping-cart__item">
+
+                        <a href="#" class="shopping-cart__link">
+                            <img src="" alt="">
+                            <span class="shopping-cart__name">Running_sport_shoe</span>
+                        </a>
+
+                <div class="shopping-cart__wrapper">
+                  <div class="shopping-cart__buttons">
+                    <button class="shopping-cart__button shopping-cart__minus">-</button>
+                    <input type="text" class="shopping-cart__input" readonly>
+                    <button class="shopping-cart__button shopping-cart__plus">+</button>
+                  </div>
+                  <span class="shopping-cart__price"></span>
+                    </li>
+                  </template>
+                  <ul class="shopping-cart__products"></ul>
+                  <div class="shopping-cart__info">
+                    <span class="shopping-cart__result">Итого:</span>
+                    <span class="shopping-cart__amount"></span>
+                    <span class="shopping-cart__total"></span>
+                  </div>
+                  <button class="shopping-cart__order" id="order-button">Оформить заказ</button>
+                </div>
+              </div>
+              <button class="main-nav__burger">
+                <img src="img/icon-menu.svg" alt="">
+              </button>
+          </div>
+
       </div>
+
     </header>
     
     <main class="main">
@@ -234,8 +265,8 @@
               <img class="product__image" src="img/slick_formal_sneaker.png" alt="slick_formal_sneaker">
               <h3 class="product__name">Slick formal sneaker shoe</h3>
               <div class="product__price">
-                <span class="product__price-new">2999 ₽</span>
-                <span class="product__price-old">4999 ₽</span>
+                <span class="product__price-new">2999</span>
+                <span class="product__price-old">4999</span>
               </div>
               <button class="product__button">
                 <img src="img/arrow_button.svg" alt="">
@@ -279,18 +310,66 @@
       </section>
       
       
-      <section class="modal-product ">
-        <div class="modal-product__сontainer">
-            <div class="modal-product__title">
-              <span >Товар успешно добавлен в корзину</span>
+      <div class="modal modal__product " id="modal_cart">
+        <div class="modal__сontainer">
+            <div class="modal__title">
+              <span>Товар успешно добавлен в корзину</span>
             </div>
-            <button class="modal-product__button button">Продолжить покупки</button>
-            <button class="modal-product__close">
+            <button type="button" class="modal__close modal__button button">Продолжить покупки</button>
+            <button type="button" class="modal__close modal__cross">
               <img src="img/modal_close.png" alt="">
             </button>
         </div>
-      </section>
+      </div>
       
+      <div class="modal modal__success" id="modal_success">
+        <div class="modal__сontainer">
+            <div class="modal__title">
+              <span>Заказ оформлен. Ожидайте звонка</span>
+            </div>
+            <button type="button" class="modal__close modal__button button">Вернуться на главную</button>
+            <button type="button" class="modal__close modal__cross">
+              <img src="img/modal_close.png" alt="">
+            </button>
+        </div>
+      </div>
+      
+      <div class="modal modal_error" id="modal_error">
+        <div class="modal__сontainer">
+          <div class="modal__title">
+            <h2>Ошибка!</h2>
+            <p>Что-то пошло не так. Мы уже знаем о проблеме. Зайдите позже.</p>
+          </div>
+          <button type="button" class="modal__close modal__button button">Продолжить покупки</button>
+          <button type="button" class="modal__close modal__cross">
+            <img src="img/modal_close.png" alt="">
+          </button>
+        </div>
+      </div>
+        
+      <div class="modal modal__order" id="modal_order"> 
+        <div class="order__container">
+          <div class="order__title">
+            <span>Для оформления заказа укажите ваш номер телефона:</span>
+          </div>
+          <form action="#" class="order__form">
+            <div class="order__group">
+              <label for="user-phone"></label>
+              <input type="phone" class="order__phone" pattern="^\+7[1-9]{10}$" id="user-phone" name="user_phone" placeholder="Номер телефона" required>
+              <div class="order__wrapper">
+                <input id="policy" type="checkbox" class="order__checkbox">
+                <label for="policy" class="order__checkbox--text">Согласен с политикой конфиденциальности</label>
+              </div>
+            </div>
+            <button type="submit" class="order__button button" id="order-confirm">Отправить</button>
+          </form>
+          <button type="button" class="order__close order__cross">
+            <img src="img/modal_close.png" alt="">
+          </button>
+        </div>
+      </div>
+
+
       
     </main> 
     

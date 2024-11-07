@@ -12,28 +12,28 @@ const closeMenu = () => {
     buttonClosed.removeEventListener('click', closeMenu);
 };
 
-const buttonCloseModal = document.querySelector('.modal-product__close');
-const modal = document.querySelector('.modal-product');
+// const buttonCloseModal = document.querySelector('.modal__close');
+// const modal = document.querySelector('.modal-product');
 
-const openModal = () => {
-    modal.classList.add('modal-product--showed');
-    buttonClosed.addEventListener('click', closeModal);
-};
+// const openModal = () => {
+//     modal.classList.add('modal--showed');
+//     buttonClosed.addEventListener('click', closeModal);
+// };
 
-const closeModal = () => {
-    modal.classList.remove("modal-product--showed");
-    buttonClosed.removeEventListener('click', closeModal);
-};
+// const closeModal = () => {
+//     modal.classList.remove("modal--showed");
+//     buttonClosed.removeEventListener('click', closeModal);
+// };
 
-const buttonAll = document.querySelectorAll('button');
-buttonAll.forEach(
-    (button) => {
-        if (button.classList.contains('most-popular__button')){
-            button.addEventListener('click',openModal);
-            buttonCloseModal.addEventListener('click', closeModal);
-            return;
-        };
-    }
-);
+// const buttonAll = document.querySelectorAll('button');
+// buttonAll.forEach(
+//     (button) => {
+//         if (button.classList.contains('most__button')){
+//             button.addEventListener('click',openModal);
+//             buttonCloseModal.addEventListener('click', closeModal);
+//             return;
+//         };
+//     }
+// );
 
-export {openModal, closeModal};
+// export {openModal, closeModal};
