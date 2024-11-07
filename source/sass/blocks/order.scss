@@ -1,0 +1,127 @@
+.order{
+    &__container{ 
+        position: relative;
+        padding: 20px;
+        max-width: 620px;
+        background-color: #FBFBFB; 
+        box-shadow: 0px 2.77px 2.21px 0px #00000005,
+        0px 6.65px 5.32px 0px #00000007,
+        0px 12.52px 10.02px 0px #00000009,
+        0px 22.34px 17.87px 0px #0000000B,
+        0px 41.78px 33.42px 0px #0000000D,
+        0px 100px 80px 0px #00000012;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px;
+
+        @media (min-width: 768px) {
+            padding: 30px;
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__phone{
+        @include clear-input;
+        
+        border: 1px solid #DEDEDE;
+        border-radius: 10px;
+        padding: 15px;
+        width: 294px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000BF;
+        margin-top: 27px;
+    }
+
+    &__checkbox{
+        outline: 0;
+        outline-offset: 0;
+        
+        border: 1px solid #DEDEDE;
+        width: 17px;
+        height: 17px;
+        margin: 0;
+        accent-color: #FFFFFF;
+        border-radius: 10px;
+
+        &--text{
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+    }
+
+    &__wrapper{
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__title{
+        color: #000000;
+        font-weight: 500;
+        max-width: 500px;
+        margin: 0;
+        font-size: 16px;
+        line-height: 19.36px;
+
+        @media (min-width: 768px) {
+            font-size: 32px;
+            line-height: 38.73px;
+        }
+    }
+
+    &__button{
+        @include clear-button;
+        
+        width: 239px;
+        height: 47px;
+        background-color: #4B85DC;
+        box-shadow: 0px 2.32px 1.97px 0px #00000006,
+        0px 5.39px 4.58px 0px #00000009,
+        0px 9.68px 8.22px 0px #0000000B,
+        0px 16.06px 13.65px 0px #0000000C,
+        0px 26.45px 22.49px 0px #0000000E,
+        0px 46.23px 39.3px 0px #00000011,
+        0px 100px 85px 0px #00000017;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        line-height: 30.8px;
+        color: #FFFFFF;
+        margin: 0 auto;
+        margin-top: 15px;
+        
+        @media (min-width: 768px) {
+            margin-top: 28px;
+        }
+        
+    }
+
+    &__cross {
+        @include clear-button;
+        
+        position: absolute;
+        top: 24px;
+        right: 11px;
+        
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    
+}

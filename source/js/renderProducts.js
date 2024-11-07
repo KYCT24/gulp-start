@@ -1,49 +1,52 @@
-import {openModal, closeModal} from './script.js';
+import {openModal, closeModal} from './modal.js';
+import { renderCart } from './productCart.js';
+import { addToStorage, getStorage } from './localstorage.js';
+import formatPrice from './formatPrice.js';
 
 export default (products, template, target, isTargetList = false, templateClass = '') => {
     const fragment = document.createDocumentFragment();
     
-    let productE1 = template.querySelector('.product__item');
+    let productEl = template.querySelector('.product__item');
     
     if (isTargetList) {
         const node = document.createElement('li');
-        node.innerHTML = productE1.innerHTML;
+        node.innerHTML = productEl.innerHTML;
         
-        Array.prototype.forEach.call(productE1.attributes, function( attr ) {
+        Array.prototype.forEach.call(productEl.attributes, function( attr ) {
             node.setAttribute( attr.name, attr.value );
         });
         node.classList.add(templateClass);
         
-        productE1 = node;
+        productEl = node;
     }
     
     products.forEach(product => {
-        const itemE1 = productE1.cloneNode(true);
-        const titleE1 = itemE1.querySelector('.product__name');
-        const imageE1 = itemE1.querySelector('.product__image');
-        const priceE1 = itemE1.querySelector('.product__price');
-        const priceNewE1 = itemE1.querySelector('.product__price-new');
-        const priceOldE1 = itemE1.querySelector('.product__price-old');
-        const buttonE1 = itemE1.querySelector('.product__button');
-        const { id, name, status, isBig, image, price, oldPrice } = product;
-
-        itemE1.dataset.productId = id;
-        titleE1.texContent = name;
-        imageE1.src = image;
-        priceNewE1.texContent =`${price} ₽`;
-        priceOldE1.texContent =`${oldPrice} ₽`;
+        const itemEl = productEl.cloneNode(true);
+        const titleEl = itemEl.querySelector('.product__name');
+        const imageEl = itemEl.querySelector('.product__image');
+        const priceNewEl = itemEl.querySelector('.product__price-new'); 
+        const priceOldEl = itemEl.querySelector('.product__price-old');
+        const buttonEl = itemEl.querySelector('.product__button');
+        const { id, isBig, status, image, name, price, oldPrice } = product;
         
-        const buttonCloseModal = document.querySelector('.modal-product__close');
-        buttonE1.addEventListener('click',openModal);
-        buttonCloseModal.addEventListener('click', closeModal);
+        buttonEl.addEventListener('click', () => {
+            addToStorage(product, 'cartKyct');
+            renderCart(true);
+        });
+        
+        itemEl.dataset.productId = id;
+        titleEl.textContent = name;
+        imageEl.src = image;
+        priceNewEl.textContent = formatPrice(price);
+        priceOldEl.textContent = formatPrice(oldPrice);
         
         if(status?.length) {
-            itemE1.classList.add(`product__item--${status}`);
+            itemEl.classList.add(`product__item--${status}`);
         } 
         if(isBig) {
-            itemE1.classList.add(`product__item--big`);
+            itemEl.classList.add(`product__item--big`);
         }
-        fragment.appendChild(itemE1);
+        fragment.appendChild(itemEl);
     });
     
     target.innerHTML = '';

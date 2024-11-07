@@ -1,4 +1,4 @@
-.modal-product {
+.modal {
     position: fixed;
     z-index: 9000;
     top: 0;
@@ -27,11 +27,20 @@
             font-weight: 500;
             font-size: 32px;
             line-height: 38px;
-            color: #000000;
+        };
+        
+        h2 {
+            color: #DC4B54;
+        };
+        
+        P {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
         };
     }
     
-    &__close {
+    &__cross {
         @include clear-button;
         
         position: absolute;
@@ -43,10 +52,6 @@
             height: 20px;
         }
     }
-    
-    // &__button {
-        
-    // }
     
     &--showed {
         display: block;
