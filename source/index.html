@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проект KYCT24</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
@@ -142,7 +143,7 @@
       
       <section class="most-popular">
         <div class="most-popular__container container">
-          <div class="most-popular__trending">
+          <div class="most-popular__trending most-popular__swiper">
             <p class="most-popular__subtitle">Сегодня в тренде</p>
             <h2 class="most-popular__title">Самые Популярные</h2>
             <span class="most-popular__description">Посмотрите, что чаще всего покупают у нас</span>
@@ -150,8 +151,8 @@
           </div>
           <div class="most-popular__slider">
             <div class="most-popular__wrapper">
-              <ul class="most-popular__list">
-                <li class="most-popular__product">
+              <ul class="most-popular__list swiper-wrapper">
+                <li class="most-popular__product ">
                   <img class="most-popular__photo" src="img/running_sport_shoe_1.png" alt="">
                   <h3 class="most-popular__name">Running sport shoe</h3>
                   <span class="most-popular__price">3999 ₽</span>
@@ -176,23 +177,45 @@
                   </button>
                 </li>
               </ul>
-              <div class="most-popular__controls slider-pagination">
-                <button class="slider-pagination__left"></button>
-                <button class="slider-pagination__center"></button>
-                <button class="slider-pagination__right"></button>
+              
+              
+              <div class="most-popular--pagination swiper-pagination most-popular__pagination--buttons"></div>
+              <div class="banners__arrow-left arrow"></div>
+              <div class="banners__arrow-right arrow arrow-right"></div>
+              
+              
+              
+              
+              
+              <!-- <div class="most-popular__pagination slider-pagination">
+                <button class="most-popular__pagination--big"></button>
+                <button class="most-popular__pagination"></button>
+                <button class="most-popular__pagination"></button>
               </div>
               <button class="most-popular__arrow-left arrow"></button>
               <button class="most-popular__arrow-right arrow arrow-right"></button>
+            </div> -->
+            
+            <!-- <div class="banners__slider--pagination swiper-pagination banners__pagination--buttons"></div>
+            <div class="banners__arrow-left arrow"></div>
+            <div class="banners__arrow-right arrow arrow-right"></div> -->
+            
+            <!-- <div class="banners__pagination--buttons slider-pagination">
+              <button class="banners__pagination--big"></button>
+              <button class="banners__pagination"></button>
+              <button class="banners__pagination"></button>
             </div>
+            <button class="banners__arrow-left arrow"></button>
+            <button class="banners__arrow-right arrow arrow-right"></button> -->
+            
             <a class="most-popular__link most-popular__link--phone button">Показать все</a>
           </div>
       </section>
-      
-      <section class="banners">
+
         <div class="banners__container container">
-          <div class="banners__slider">
-            <ul class="banners__list">
-              <li class="banners__item big-banner">
+          <div class="banners__slider banners__swiper">
+            <ul class="banners__list swiper-wrapper">
+              <li class="banners__item big-banner swiper-slide">
                 <div class="big-banner__wrapper">
                   <h2 class="big-banner__title">Ты готов<br>проложить свой путь?</h2>
                   <a class="big-banner__button button">См Все</a>
@@ -215,7 +238,7 @@
                   </ul>
                 </div>
               </li>
-              <!-- <li class="banners__item banners__item--green big-banner">
+              <li class="banners__item banners__item--green big-banner swiper-slide">
                 <div class="big-banner__wrapper">
                   <h2 class="big-banner__title">Ты готов<br>проложить свой путь?</h2>
                   <a class="big-banner__button button">См Все</a>
@@ -237,15 +260,41 @@
                     </li>
                   </ul>
                 </div>
-              </li> -->
+              </li>
+              <li class="banners__item banners__item--blue big-banner swiper-slide">
+                <div class="big-banner__wrapper">
+                  <h2 class="big-banner__title">Ты готов<br>проложить свой путь?</h2>
+                  <a class="big-banner__button button">См Все</a>
+                  <ul class="big-banner__products">
+                    <li class="big-banner__product">
+                      <a class="big-banner__photo">
+                        <img src="img/big_banner_shoe_1.png" alt="">
+                      </a>
+                    </li>
+                    <li class="big-banner__product">
+                      <a class="big-banner__photo">
+                        <img src="img/big_banner_shoe_2.png" alt="">
+                      </a>
+                    </li>
+                    <li class="big-banner__product">
+                      <a class="big-banner__photo">
+                        <img src="img/big_banner_shoe_3.png" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
-            <div class="banners__controls slider-pagination">
-              <button class="slider-pagination__left slider-pagination__left--white"></button>
-              <button class="slider-pagination__center slider-pagination__center--white"></button>
-              <button class="slider-pagination__right slider-pagination__right--white"></button>
+            <div class="banners__slider--pagination swiper-pagination banners__pagination--buttons"></div>
+            <div class="banners__arrow-left arrow"></div>
+            <div class="banners__arrow-right arrow arrow-right"></div>
+            <!-- <div class="banners__pagination--buttons slider-pagination">
+              <button class="banners__pagination--big"></button>
+              <button class="banners__pagination"></button>
+              <button class="banners__pagination"></button>
             </div>
             <button class="banners__arrow-left arrow"></button>
-            <button class="banners__arrow-right arrow arrow-right"></button>
+            <button class="banners__arrow-right arrow arrow-right"></button> -->
           </div>
         </div>
       </section>
