@@ -1,4 +1,5 @@
 import './script.js';
+import './slider.js';
 import renderProducts from './renderProducts.js';
 import { fetchParams } from './api.js';
 import products from './products.js';

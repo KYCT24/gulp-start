@@ -37,7 +37,7 @@ orderButton.addEventListener('click', () => {
         newObj['amount'] = arr[id].amount;
         newArr.push(newObj);
     }
-    // createOrder(newArr)
+    createOrder(newArr)
 });
 
 orderConfirm.addEventListener('click', () => {
@@ -48,6 +48,15 @@ orderConfirm.addEventListener('click', () => {
         const userData = {
             'phone': userPhone.value,
         };
+        
+        fetch('telegram.php',{
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json; charset:utf-8"
+            },
+            "body" : JSON.stringify(userData)
+        });
+        
         closeModal(modalCartOrder);
         openModal(modalCartSuccess);
     } else {

@@ -1,5 +1,13 @@
 .banners {
     
+    &__swiper {
+        // width: 600px;
+        // height: 300px;
+        overflow: hidden;
+        padding-top: 205px;
+        margin-top: -205px;
+      }
+    
     &__container {
         margin-top: 50px;
         margin-bottom: 40px;
@@ -22,6 +30,7 @@
         @include clear-list;
         width: 100%;
         position: relative;
+
     }
     &__item {
         z-index: -10;
@@ -39,7 +48,6 @@
         
         @media (min-width: 1280px) {
             border-radius: 20px;
-            
             margin-left: 0px;
             margin-right: 0px;
         }
@@ -93,43 +101,80 @@
             }
         }
         &--green {
-            background-color: green;
+            background-color: #2a8f03e3;
+        }
+        &--blue {
+            background-color: #0400ffb7;
         }
     }
     
-    &__controls {
-        position: absolute;
-        top: 330px;
-        right: 0;
-        left: 0;
+
+    
+    &__pagination {
+        background-color: #fff;
+        border-color: transparent;
+        width: 11px;
+        height: 11px;
+        border-radius: 11px;
+        padding: 0;
+        transition: width 0.3s;
         
-        @media (min-width: 768px) {
-            top: 580px;
-            left: auto;
-            right: 20px;
+        &--big{
+            width: 30px;
+            border-radius: 6px;
+            padding: 0;
         }
-        @media (min-width: 1280px) {
-            top: 560px;
+        
+        &--buttons {
+            position: absolute;
+            display: flex;
+            z-index: 1111;
+            // top: 330px;
+            // right: 0;
+            // left: 0;
+            gap: 20px;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            
+            @media (min-width: 768px) {
+                // top: 580px;
+                // left: auto;
+                // right: 20px;
+            }
+            @media (min-width: 1280px) {
+                // top: 560px;
+            }
         }
+
     }
     &__arrow-left {
         display: none;
+
         
         @media (min-width: 768px) {
             display: block;
             position: absolute;
+            z-index: 1112;
             top: 265px;
             left: 25px;
+            top: 62%;
+            transform: translateY(-50%);
         }
     }
     &__arrow-right {
         display: none;
+
         
         @media (min-width: 768px) {
             display: block;
             position: absolute;
+            z-index: 1113;
             top: 270px;
             right: 25px;
+            top: 62%;
+            transform: translateY(-50%) rotate(180deg);
         }
     }
 }
